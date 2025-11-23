@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ophthalmology e-Learning</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="top-nav">
+    <div class="logo">OphthoLearn</div>
+    <div class="nav-right">
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#modules">Modules</a>
+        <a href="#progress">Progress</a>
+        <a href="#osce">OSCE Station</a>
+        <a href="#osce-checklist">OSCE Checklist</a>
+        <a href="#visuals">Visual Aids</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#participants">Log & Feedback</a>
+        <a href="#about">About</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO / OVERVIEW -->
+    <section class="hero" id="overview">
+      <div class="hero-text">
+        <h1>Ophthalmology OSCE Prep</h1>
+        <p>
+          Interactive e-learning focused on eye examination and cranial nerve assessment,
+          designed for medical students and junior doctors.
+        </p>
+        <button class="primary-btn" id="startModuleBtn">Start Core Module</button>
+        <p class="small-note">Ideal for portfolio evidence and real-world exam prep.</p>
+      </div>
+
+      <div class="hero-card">
+        <h2>Learning Objectives</h2>
+        <ul>
+          <li>Perform a structured cranial nerve &amp; eye examination.</li>
+          <li>Recognise red-flag ophthalmic presentations.</li>
+          <li>Interpret key exam findings with confidence.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MODULES -->
+    <section class="section" id="modules">
+      <h2>Modules</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>1. History &amp; Red Flags</h3>
+          <p>Targeted ophthalmic history, emergency presentations, and referral criteria.</p>
+          <button class="outline-btn" data-module="history">Open Module</button>
+        </article>
+
+        <article class="card">
+          <h3>2. Cranial Nerve &amp; Eye Exam</h3>
+          <p>Step-by-step OSCE-style examination of visual acuity, fields, pupils and movements.</p>
+          <button class="outline-btn" data-module="exam">Open Module</button>
+        </article>
+
+        <article class="card">
+          <h3>3. Common Conditions</h3>
+          <p>Cataract, glaucoma, macular degeneration, acute angle-closure overview.</p>
+          <button class="outline-btn" data-module="conditions">Open Module</button>
+        </article>
+      </div>
+
+      <!-- Module display area -->
+      <div class="module-viewer">
+        <h3 id="moduleTitle">Module content</h3>
+        <div id="moduleContent">
+          <p>Select a module above to see structured notes and OSCE tips here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRESS OVERVIEW -->
+    <section class="section" id="progress">
+      <h2>Your progress</h2>
+      <p class="section-intro">
+        This summary is stored only in your browser to help you track what you’ve completed.
+      </p>
+
+      <div class="progress-card">
+        <ul>
+          <li class="progress-item">
+            <span class="progress-label">Core modules viewed:</span>
+            <span id="progressModulesText" class="progress-status">Not started</span>
+          </li>
+          <li class="progress-item">
+            <span class="progress-label">Quiz performance:</span>
+            <span id="progressQuizText" class="progress-status">Not attempted</span>
+          </li>
+          <li class="progress-item">
+            <span class="progress-label">Timed OSCE practice:</span>
+            <span id="progressOsceText" class="progress-status">Not completed yet</span>
+          </li>
+          <li class="progress-item">
+            <span class="progress-label">OSCE checklist self-assessment:</span>
+            <span id="progressChecklistText" class="progress-status">Not used yet</span>
+          </li>
+        </ul>
+        <p id="progressOverallText" class="progress-overall">
+          Overall: In progress – aim to complete all three modules, pass the quiz and use the timed OSCE + checklist.
+        </p>
+      </div>
+    </section>
+
+    <!-- OSCE STATION SECTION -->
+    <section class="section" id="osce">
+      <h2>Cranial Nerve &amp; Eye OSCE Station</h2>
+      <p class="section-intro">
+        Use this as a script for an OSCE station. Each step can be expanded with prompts you can say out loud.
+      </p>
+
+      <div class="osce-layout">
+        <div>
+          <span class="badge">5–7 minute station</span>
+          <p style="margin-top: 0.75rem;">
+            You are the FY1 doctor asked to perform a focused cranial nerve and eye examination on a standardised patient
+            complaining of blurred vision.
+          </p>
+
+          <p style="color: var(--text-muted); margin-top:0.5rem;">
+            <strong>Examiner prompt:</strong> “Please perform a cranial nerve and eye examination. You do not need to examine other systems. Explain your findings as you go.”
+          </p>
+
+          <!-- Timed OSCE controls -->
+          <div class="osce-controls">
+            <div class="osce-timer">
+              <span class="osce-timer-label">OSCE timer:</span>
+              <span id="osceTimerDisplay">07:00</span>
+            </div>
+            <div class="osce-timer-buttons">
+              <button class="outline-btn" id="startOsceTimerBtn">Start 7-minute station</button>
+              <button class="outline-btn" id="resetOsceTimerBtn">Reset</button>
+            </div>
+            <p class="small-note osce-timer-note">
+              Use this timer to practise under exam conditions. It runs only on your device and does not record any data.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion">
+
+          <div class="accordion-item open">
+            <button class="accordion-header">
+              1. Introduction &amp; safety <span class="accordion-icon">▾</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>Wash or gel hands, introduce yourself, confirm patient name and DOB.</li>
+                <li>Explain the exam in simple terms and gain consent.</li>
+                <li>Check for pain, ask about comfort, ensure lighting and positioning are appropriate.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              2. Visual acuity <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>Snellen chart at 6m (or 3m) with glasses if worn.</li>
+                <li>Test each eye separately, then both together.</li>
+                <li>State how you would record the findings correctly.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              3. Visual fields &amp; optic nerve <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>Confrontation testing in all quadrants.</li>
+                <li>Ask if any areas of vision appear “missing” or “blurred”.</li>
+                <li>Mention fundoscopy and key optic disc findings.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              4. Pupils &amp; RAPD <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>Inspect pupil size, shape and equality.</li>
+                <li>Test direct and consensual light reflexes.</li>
+                <li>Perform swinging light test for RAPD and interpret.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              5. Eye movements <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>Ask about diplopia before starting.</li>
+                <li>Perform H-test, ensuring head remains still.</li>
+                <li>Comment on nystagmus and any movement limitation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              6. CN V &amp; VII <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>Light touch sensation over V1, V2, V3 (if time allows).</li>
+                <li>Test facial movements: eyebrows, eye closure, cheek puff, smile.</li>
+                <li>Mention corneal reflex and its afferent/efferent limbs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              7. To complete &amp; summary <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-body">
+              <ul>
+                <li>State additional tests: fundoscopy, IOP measurement, colour vision.</li>
+                <li>Summarise key findings clearly and concisely.</li>
+                <li>Suggest likely diagnoses and appropriate next steps/referrals.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OSCE SCORING CHECKLIST -->
+    <section class="section" id="osce-checklist">
+      <h2>OSCE Self-Assessment Checklist</h2>
+      <p class="section-intro">
+        Use this checklist (inspired by cranial nerve exam guides such as GeekyMedics) to reflect on your technique,
+        structure and professionalism during a timed station.
+      </p>
+
+      <div class="osce-checklist-card">
+        <p class="small-note" style="margin-bottom: 0.6rem;">
+          Tick each item you feel you’ve met during a practice station. This is for self-reflection only and is stored
+          locally in your browser.
+        </p>
+
+        <div id="osceChecklistContainer"></div>
+
+        <div class="osce-checklist-footer">
+          <p id="osceChecklistScore">Score: 0 / 0</p>
+          <p id="osceChecklistBand">Band: –</p>
+          <button class="outline-btn" id="resetChecklistBtn">Reset checklist</button>
+        </div>
+
+        <p class="small-note">
+          Bands: Excellent, Pass, Borderline, Needs consolidation. Focus your revision on unchecked items and repeat the
+          station to build confidence, fluency and patient-centred communication.
+        </p>
+      </div>
+    </section>
+
+    <!-- VISUAL AIDS -->
+    <section class="section" id="visuals">
+      <h2>Visual Aids</h2>
+      <p class="section-intro">
+        Key diagrams to support understanding of macular disease, visual fields and ophthalmic emergencies.
+        Click any image to enlarge.
+      </p>
+
+      <div class="image-grid">
+
+        <figure class="image-card">
+          <img
+            src="images/amsler-grid.png"
+            alt="Amsler grid showing macular distortion"
+            data-caption="Amsler grid — used to detect macular distortion. Ask the patient to focus on the centre dot and report any bending or missing lines."
+          />
+          <figcaption>Amsler grid — macular assessment</figcaption>
+        </figure>
+
+        <figure class="image-card">
+          <img
+            src="images/visual-field-defects.png"
+            alt="Common visual field defects diagram"
+            data-caption="Visual field defects — includes central scotoma, monocular blindness, bitemporal hemianopia (chiasmal), homonymous hemianopia and quadrantanopia."
+          />
+          <figcaption>Common visual field defects</figcaption>
+        </figure>
+
+        <figure class="image-card">
+          <img
+            src="images/angle-closure.png"
+            alt="Open angle vs closed angle glaucoma diagram"
+            data-caption="Open vs closed angle glaucoma — closed angle shows blocked drainage of aqueous humour at the trabecular meshwork → sudden rise in IOP."
+          />
+          <figcaption>Open vs closed angle glaucoma</figcaption>
+        </figure>
+
+        <figure class="image-card">
+          <img
+            src="images/retinal-detachment.png"
+            alt="Retinal detachment illustration"
+            data-caption="Retinal detachment — separation of neurosensory retina from RPE. Symptoms: flashes, floaters, curtain over vision."
+          />
+          <figcaption>Retinal detachment</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section" id="quiz">
+      <h2>Quick Knowledge Check</h2>
+      <p class="section-intro">
+        Test yourself with short OSCE-style questions.
+      </p>
+
+      <div id="quizContainer"></div>
+      <button class="primary-btn" id="submitQuizBtn">Submit Answers</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- PARTICIPANT LOG & FEEDBACK -->
+    <section class="section" id="participants">
+      <h2>Participant Log &amp; Feedback</h2>
+      <p class="section-intro">
+        Please complete this combined participant log and feedback form after using the module.
+        This supports audit and portfolio documentation (e.g. evidence of 50+ learners and changes in confidence).
+      </p>
+
+      <div class="form-card">
+        <p>You can open the form in a new tab, or complete it directly on this page.</p>
+
+        <a
+          href="https://forms.gle/sQa4zhbSdjZ2YC4j9"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="primary-btn form-btn"
+        >
+          Open form in new tab
+        </a>
+
+        <p class="embedded-note">Or complete it here:</p>
+
+        <div class="form-frame-wrapper">
+          <iframe
+            class="form-frame"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfXF1poaHyIWAUbnvlGwaDmw9WWCJ6cnBUVIfu4IHGUZYUxfQ/viewform?embedded=true"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
+        </div>
+
+        <p class="small-note">
+          Responses are stored securely in Google Sheets and may be used in anonymised form for audit and portfolio evidence.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About this resource</h2>
+      <p>
+        This e-learning module was developed for ophthalmology education and portfolio development.
+        It focuses on practical skills in eye examination, cranial nerve assessment and recognising key red-flag presentations.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> OphthoLearn – Created by Zakariya. Educational use only.</p>
+  </footer>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close image">&times;</button>
+      <img id="lightboxImage" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
