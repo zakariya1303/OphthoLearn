@@ -42,6 +42,12 @@ body.home-page {
   background: #030c25;
 }
 
+body.module2-exam-page {
+  position: relative;
+  min-height: 100vh;
+  background: #030c25;
+}
+
 .home-video-bg {
   position: fixed;
   inset: 0;
@@ -62,6 +68,13 @@ body.home-page {
 
 body.home-page main,
 body.home-page .footer {
+  position: relative;
+  z-index: 2;
+}
+
+body.module2-exam-page header,
+body.module2-exam-page main,
+body.module2-exam-page .footer {
   position: relative;
   z-index: 2;
 }
@@ -2013,9 +2026,10 @@ body.interactive-hover::before {
 .page-video-backdrop {
   position: fixed;
   inset: 0;
-  z-index: -2;
+  z-index: 0;
   overflow: hidden;
   background: #08111d;
+  pointer-events: none;
 }
 
 .page-video-backdrop-media {
