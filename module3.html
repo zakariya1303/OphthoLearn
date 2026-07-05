@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 3: Key Presentations</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-progress-module="conditions">
+  <!-- NAVIGATION -->
+  <header class="top-nav">
+    <a class="logo" href="index.html">
+      <img src="Images/logo.png" alt="OphthoLearn Logo">
+      <span class="logo-text">The Clinical Foundations of Ophthalmology</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="module1-history.html">Module 1: History</a>
+
+      <div class="nav-item dropdown">
+        <a class="nav-link" href="module2-exam.html">Module 2: Examination <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-link" href="module2-exam.html">How to conduct an ophthalmology examination</a>
+          <a class="dropdown-link" href="module2-mock.html">Mock station</a>
+          <a class="dropdown-link" href="module2-fundoscopy.html">How to use fundoscopy</a>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a class="nav-link" href="module3-common.html">Module 3: Presentations <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-link" href="module3-common.html">Common conditions</a>
+          <a class="dropdown-link" href="module3-emergency.html">Emergency conditions</a>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown dropdown-right">
+        <a class="nav-link" href="module4-spot.html">Module 4: Practise <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-link" href="module4-spot.html">Spot diagnosis</a>
+          <a class="dropdown-link" href="module4-sba.html">SBA questions</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" id="module3-common">
+      <h2>Module 3: Key presentations</h2>
+      <p class="section-intro">Common ophthalmic conditions and how they present.</p>
+
+      <div class="module-viewer">
+        <h3>Common conditions</h3>
+        <div class="tabs" data-tabs>
+          <div class="tablist" role="tablist" aria-label="Common conditions">
+            <button class="tab-btn" type="button" role="tab" aria-selected="true" aria-controls="tab-common-cataract" id="tab-common-cataract-btn">Cataract</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-poag" id="tab-common-poag-btn">Primary Open-Angle Glaucoma</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-dr" id="tab-common-dr-btn">Diabetic Retinopathy</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-dryamd" id="tab-common-dryamd-btn">Dry AMD</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-chalazion" id="tab-common-chalazion-btn">Chalazion</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-blepharitis" id="tab-common-blepharitis-btn">Blepharitis</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-conj" id="tab-common-conj-btn">Conjunctivitis</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-ded" id="tab-common-ded-btn">Dry Eye Disease</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" aria-controls="tab-common-episcleritis" id="tab-common-episcleritis-btn">Episcleritis</button>
+          </div>
+
+          <div class="tabpanels">
+            <div class="tab-panel" role="tabpanel" id="tab-common-cataract" aria-labelledby="tab-common-cataract-btn">
+              <h3>Cataract in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> Opacification of the crystalline lens.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Gradual painless visual loss and glare.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Reduced red reflex and lens opacity.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Cataract surgery.</li>
+                <li><strong>Referral:</strong> Routine.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>A cataract is the progressive clouding of the eye's natural lens, leading to visual impairment. It is the leading cause of reversible blindness worldwide and remains one of the most common reasons for referral to ophthalmology services. Although most cataracts are age-related, they may also occur secondary to trauma, diabetes or prolonged corticosteroid use.</p>
+
+              <h3>Historical Background</h3>
+              <p>The word cataract originates from the Greek word <em>kataraktes</em>, meaning waterfall. Ancient physicians believed visual loss occurred because a cloudy fluid descended in front of the eye like a waterfall.</p>
+              <p>Descriptions of cataracts date back more than three millennia, and the ancient Indian surgeon Sushruta is credited with performing one of the earliest surgical procedures for cataract around 600 BCE. Modern cataract surgery evolved dramatically during the twentieth century following Sir Harold Ridley's introduction of the intraocular lens in 1949.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Timeline</h4>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>600 BCE → Sushruta performs couching</li>
+                <li>1747 → Daviel pioneers cataract extraction</li>
+                <li>1949 → Harold Ridley implants first intraocular lens</li>
+                <li>Present day → Modern phacoemulsification surgery</li>
+              </ul>
+
+              <h3>Epidemiology</h3>
+              <p>Cataracts become increasingly prevalent with age and affect the majority of individuals over the age of sixty-five. As populations continue to live longer, cataract-related visual impairment remains a significant global health burden despite the availability of highly effective surgical treatment.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Increasing age is by far the most important risk factor for cataract development. Additional contributors include:</p>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>Diabetes mellitus</li>
+                <li>Cigarette smoking</li>
+                <li>Prolonged ultraviolet exposure</li>
+                <li>Chronic corticosteroid use</li>
+                <li>Ocular trauma or previous intraocular surgery</li>
+              </ul>
+
+              <h3>Pathophysiology</h3>
+              <p>The lens remains transparent because of its highly organised protein structure and absence of blood vessels. Over time, oxidative damage causes lens proteins to denature and aggregate, resulting in increasing light scatter and progressive loss of transparency. This process ultimately leads to visual deterioration.</p>
+
+              <h3>Symptoms</h3>
+              <p>Patients usually present with a gradual and painless decline in vision. Glare, particularly at night, is a common complaint, and many patients report increasing difficulty reading or driving. Colours may appear less vivid, and some experience monocular diplopia or frequent changes in spectacle prescription.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may demonstrate:</p>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>Reduced visual acuity</li>
+                <li>Diminished red reflex</li>
+                <li>Visible lens opacity</li>
+                <li>Nuclear, cortical or posterior subcapsular changes on slit-lamp examination</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>Visual acuity assessment</li>
+                <li>Pinhole testing</li>
+                <li>Slit-lamp examination</li>
+                <li>Fundoscopy</li>
+                <li>Biometry (pre-operatively)</li>
+              </ul>
+
+              <h3>Management</h3>
+              <p>Early cataracts may be managed conservatively with updated spectacles and improved lighting. Once visual symptoms begin to interfere with daily activities, surgery becomes the definitive treatment. Modern phacoemulsification with intraocular lens implantation achieves excellent outcomes and remains one of the safest surgical procedures performed worldwide.</p>
+
+              <h3>Red Flags</h3>
+              <p>Urgent assessment should be considered if visual deterioration is unusually rapid or if there is concern regarding secondary glaucoma or another coexisting ocular pathology.</p>
+
+              <h3>Key Takeaway</h3>
+              <p style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1rem;">Cataracts are the most common cause of reversible blindness worldwide and typically present with gradual painless visual loss. Surgical removal of the cloudy lens remains highly effective and restores vision in the vast majority of patients.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-poag" aria-labelledby="tab-common-poag-btn" hidden>
+              <h3>Open-Angle Glaucoma in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> A chronic progressive optic neuropathy characterised by optic nerve damage and visual field loss, often associated with raised intraocular pressure.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Usually asymptomatic until advanced disease.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Optic disc cupping, retinal nerve fibre layer loss, visual field defects.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Intraocular pressure reduction with drops, laser treatment, or surgery.</li>
+                <li><strong>Referral:</strong> Routine but prompt ophthalmology referral.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Primary open-angle glaucoma (POAG) is a chronic, progressive disease of the optic nerve that results in irreversible visual field loss if left untreated. It is one of the leading causes of blindness worldwide and is particularly dangerous because patients often remain asymptomatic until significant optic nerve damage has already occurred.</p>
+              <p>Unlike acute angle-closure glaucoma, POAG develops slowly over many years and does not cause pain or redness. Early detection through routine eye examinations is therefore essential.</p>
+
+              <h3>Historical Background</h3>
+              <p>The term glaucoma originates from the Greek word <em>glaukos</em>, meaning bluish-green, referring to the appearance of eyes affected by advanced disease.</p>
+              <p>Although glaucoma was recognised by ancient physicians, the condition remained poorly understood for centuries. A major breakthrough occurred in 1851 when Hermann von Helmholtz invented the ophthalmoscope, allowing clinicians to directly visualise the optic nerve for the first time. This transformed glaucoma from a disease diagnosed purely by symptoms into one that could be recognised through characteristic structural changes.</p>
+              <p>The development of tonometry, visual field testing and optical coherence tomography (OCT) has further revolutionised diagnosis and monitoring.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Timeline</h4>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>1851 → Helmholtz invents the ophthalmoscope</li>
+                <li>1884 → Early tonometers introduced</li>
+                <li>1970s → Modern pressure-lowering eye drops developed</li>
+                <li>1990s → Widespread use of automated visual field testing</li>
+                <li>2000s → OCT transforms glaucoma monitoring</li>
+                <li>Present day → Laser and minimally invasive glaucoma surgery</li>
+              </ul>
+
+              <h3>Epidemiology</h3>
+              <p>Glaucoma is the leading cause of irreversible blindness worldwide and affects millions of people globally. The prevalence increases significantly with age and is particularly high among individuals of Afro-Caribbean ancestry. Because early disease is often asymptomatic, many patients remain undiagnosed until advanced visual field loss has occurred.</p>
+              <p>As populations continue to age, glaucoma is expected to become an increasingly important public health challenge.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Age is the most significant risk factor for developing POAG, with incidence increasing steadily after the age of forty. A positive family history is particularly important, as first-degree relatives have a substantially increased risk compared with the general population.</p>
+              <p>Other recognised risk factors include elevated intraocular pressure, Afro-Caribbean ethnicity, myopia, diabetes mellitus, thin central corneas and prolonged corticosteroid use.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>Aqueous humour is continuously produced by the ciliary body and normally drains through the trabecular meshwork into Schlemm's canal. In POAG, the anterior chamber angle remains anatomically open, but resistance to aqueous outflow gradually increases.</p>
+              <p>As drainage becomes less efficient, intraocular pressure may rise, placing stress on retinal ganglion cells and the optic nerve head. Progressive loss of these cells results in characteristic optic disc cupping and irreversible visual field defects.</p>
+              <p>Importantly, some patients develop glaucoma despite having normal intraocular pressures, highlighting that factors such as vascular compromise and optic nerve susceptibility also play a role.</p>
+
+              <h3>Symptoms</h3>
+              <p>Most patients with early POAG have no symptoms whatsoever. Central vision is usually preserved until very late in the disease process, meaning patients may remain unaware of progressive visual loss.</p>
+              <p>As glaucoma advances, patients may begin to notice difficulty navigating unfamiliar environments, bumping into objects, missing steps on staircases, or difficulty driving. In severe disease, progressive peripheral field loss results in the classic appearance of tunnel vision.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>Raised intraocular pressure</li>
+                <li>Increased cup-to-disc ratio</li>
+                <li>Thinning of the neuroretinal rim</li>
+                <li>Retinal nerve fibre layer defects</li>
+                <li>Visual field loss</li>
+                <li>Optic disc asymmetry between eyes</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Diagnosis relies on a combination of structural and functional assessment:</p>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>Visual acuity testing</li>
+                <li>Intraocular pressure measurement (tonometry)</li>
+                <li>Gonioscopy</li>
+                <li>Dilated fundoscopy</li>
+                <li>Automated visual field testing</li>
+                <li>Optical coherence tomography (OCT)</li>
+              </ul>
+              <p><em>No single investigation confirms glaucoma; diagnosis is based on the overall clinical picture.</em></p>
+
+              <h3>Management</h3>
+              <p>The primary aim of treatment is to reduce intraocular pressure and slow progression of optic nerve damage.</p>
+              <p>First-line treatment typically involves prostaglandin analogue eye drops, which increase aqueous humour outflow. Additional medications such as beta-blockers, carbonic anhydrase inhibitors and alpha agonists may be added when required.</p>
+              <p>Laser trabeculoplasty is increasingly used as an early treatment option and may reduce the need for long-term medication. Surgical intervention, including trabeculectomy or glaucoma drainage devices, is reserved for patients with progressive disease despite maximal medical therapy.</p>
+              <p>Although treatment cannot restore lost vision, it can significantly reduce the risk of further deterioration.</p>
+
+              <h3>Complications</h3>
+              <p>If left untreated, POAG leads to progressive and irreversible visual field loss. As disease advances, patients may experience severe constriction of peripheral vision and ultimately complete blindness.</p>
+              <p>The psychosocial impact can be substantial, affecting driving eligibility, independence and quality of life.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1rem;">Red Flags / Referral Guidance</h3>
+              <p>Urgent ophthalmology assessment should be arranged if glaucoma is suspected in a patient with rapidly worsening vision or markedly elevated intraocular pressure.</p>
+              <p>Individuals with a strong family history of glaucoma should be encouraged to undergo regular optometric screening, even if asymptomatic.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1rem;">Clinical Pearl</h3>
+              <p>Patients often retain excellent central visual acuity despite significant peripheral visual field loss. A normal visual acuity test does not exclude glaucoma.</p>
+
+              <h3 style="background: rgba(34, 211, 238, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1rem;">OSCE Tip</h3>
+              <p>When examining the optic disc, always comment on the cup-to-disc ratio. A ratio greater than 0.6 or significant asymmetry between the two eyes should raise suspicion for glaucoma.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1rem;">Key Takeaway</h3>
+              <p>Primary open-angle glaucoma is a chronic, progressive optic neuropathy and one of the leading causes of irreversible blindness worldwide. Because early disease is usually asymptomatic, regular eye examinations and prompt treatment are crucial in preventing permanent visual loss.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-dr" aria-labelledby="tab-common-dr-btn" hidden>
+              <h3>Diabetic Retinopathy in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> A microvascular complication of diabetes mellitus that damages the retinal blood vessels and can lead to visual impairment and blindness.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Often asymptomatic initially, later causing blurred vision, floaters and visual loss.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Microaneurysms, haemorrhages, exudates, cotton wool spots and neovascularisation.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Optimisation of diabetic control, retinal laser treatment, anti-VEGF injections and vitrectomy when indicated.</li>
+                <li><strong>Referral:</strong> Routine screening for all diabetic patients, urgent ophthalmology review for proliferative disease or sudden visual deterioration.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Diabetic retinopathy (DR) is one of the most important complications of diabetes mellitus and remains a leading cause of preventable blindness in working-age adults worldwide. Chronic hyperglycaemia damages the retinal microvasculature, leading to vascular leakage, retinal ischaemia and, in advanced cases, the development of abnormal new blood vessels.</p>
+              <p>The disease often develops silently over many years. Consequently, significant retinal pathology may be present before patients become aware of any visual symptoms. This makes regular diabetic eye screening essential for early detection and intervention.</p>
+
+              <h3>History of the Disease</h3>
+              <p>Prior to the discovery of insulin in 1921, many patients with diabetes died before long-term complications could develop. As survival improved throughout the twentieth century, clinicians increasingly recognised characteristic retinal changes associated with diabetes.</p>
+              <p>The development of retinal photography and fluorescein angiography revolutionised understanding of diabetic retinal disease. Landmark studies in the 1970s demonstrated that laser photocoagulation significantly reduced rates of severe visual loss. More recently, anti-VEGF therapy has transformed the management of diabetic macular oedema and proliferative diabetic retinopathy.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Timeline</h4>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>1921 – Discovery of insulin</li>
+                <li>1960s – Fluorescein angiography introduced</li>
+                <li>1970s – Diabetic Retinopathy Study establishes laser treatment</li>
+                <li>1980s – Large-scale diabetic screening programmes begin</li>
+                <li>2000s – Anti-VEGF therapy introduced</li>
+                <li>Present Day – National diabetic eye screening programmes and advanced retinal imaging</li>
+              </ul>
+
+              <h3>Epidemiology</h3>
+              <p>Diabetic retinopathy affects approximately one-third of individuals living with diabetes and remains one of the commonest causes of visual impairment among working-age adults. The prevalence increases with the duration of diabetes and is particularly common among individuals with poor glycaemic control.</p>
+              <p>As rates of diabetes continue to rise globally, diabetic retinopathy is expected to become an increasingly significant public health challenge.</p>
+
+              <h3>Risk Factors</h3>
+              <p>The duration of diabetes is the strongest predictor of diabetic retinopathy. Patients with longstanding diabetes are substantially more likely to develop retinal complications than those with newly diagnosed disease.</p>
+              <p>Poor glycaemic control, hypertension and hyperlipidaemia all accelerate disease progression. Additional risk factors include smoking, pregnancy, obesity and diabetic nephropathy. Optimising these factors can significantly reduce the risk of visual loss.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>Chronic hyperglycaemia damages retinal capillary endothelial cells and supporting pericytes. This results in increased vascular permeability and progressive closure of small retinal vessels.</p>
+              <p>As retinal perfusion becomes impaired, areas of ischaemia develop. The retina responds by releasing vascular endothelial growth factor (VEGF), which stimulates the formation of new blood vessels. Unfortunately, these vessels are fragile and prone to bleeding.</p>
+              <p>Disease progression therefore reflects two key processes: retinal vascular leakage and retinal ischaemia.</p>
+
+              <h3>Classification</h3>
+              <p>Diabetic retinopathy is broadly divided into non-proliferative diabetic retinopathy (NPDR) and proliferative diabetic retinopathy (PDR).</p>
+              <p><strong>Non-proliferative disease</strong> represents the earlier stages of retinal damage and is characterised by microvascular abnormalities and vascular leakage.</p>
+              <p><strong>Proliferative diabetic retinopathy</strong> represents advanced disease and is defined by the presence of retinal neovascularisation. These abnormal blood vessels can cause vitreous haemorrhage and tractional retinal detachment.</p>
+              <p>Diabetic macular oedema may occur at any stage and is a major cause of visual impairment.</p>
+
+              <h3>Symptoms</h3>
+              <p>Early diabetic retinopathy is frequently asymptomatic. This is why many patients are diagnosed through routine diabetic eye screening rather than because of visual complaints.</p>
+              <p>As the disease progresses, patients may develop blurred vision, difficulty reading and fluctuating visual acuity. Floaters may occur due to vitreous haemorrhage. In severe cases, sudden visual loss may result from retinal detachment or extensive bleeding into the vitreous cavity.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Microaneurysms</li>
+                <li>Dot-blot haemorrhages</li>
+                <li>Hard exudates</li>
+                <li>Cotton wool spots</li>
+                <li>Venous beading</li>
+                <li>Intraretinal microvascular abnormalities (IRMAs)</li>
+                <li>Neovascularisation</li>
+                <li>Vitreous haemorrhage</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Assessment typically begins with visual acuity testing and dilated fundoscopy.</p>
+              <p>Modern retinal assessment relies heavily on retinal imaging, particularly optical coherence tomography (OCT), which is invaluable for detecting diabetic macular oedema.</p>
+              <p>Additional investigations may include:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Visual acuity testing</li>
+                <li>Fundus photography</li>
+                <li>Optical coherence tomography (OCT)</li>
+                <li>Fluorescein angiography</li>
+              </ul>
+              <p>These investigations help determine disease severity and guide treatment decisions.</p>
+
+              <h3>Management</h3>
+              <p>Management requires both ophthalmic treatment and optimisation of systemic diabetic control. Good glycaemic control remains one of the most effective methods of reducing disease progression.</p>
+              <p>Patients with sight-threatening disease may require retinal laser treatment, particularly pan-retinal photocoagulation for proliferative diabetic retinopathy. Anti-VEGF injections are commonly used to treat diabetic macular oedema and many cases of proliferative disease.</p>
+              <p>Vitrectomy surgery may be required for persistent vitreous haemorrhage or tractional retinal detachment.</p>
+
+              <h3>Complications</h3>
+              <p>Untreated diabetic retinopathy can result in significant visual morbidity. Diabetic macular oedema remains one of the most common causes of visual loss in diabetic patients.</p>
+              <p>Advanced proliferative disease may lead to vitreous haemorrhage, tractional retinal detachment and neovascular glaucoma. These complications can result in severe and potentially irreversible visual impairment.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Urgent ophthalmology review is required for:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Sudden visual loss</li>
+                <li>New floaters associated with visual deterioration</li>
+                <li>Vitreous haemorrhage</li>
+                <li>Proliferative diabetic retinopathy</li>
+                <li>Significant diabetic macular oedema</li>
+              </ul>
+              <p>Any diabetic patient experiencing a sudden change in vision should be assessed promptly.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>The most important symptom of diabetic retinopathy is often no symptom at all. Significant retinal disease may be present despite apparently normal vision, highlighting the importance of regular screening.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>When assessing a patient with diabetes, always ask about the duration of disease, most recent HbA1c and attendance at diabetic eye screening appointments. These questions demonstrate an understanding of both systemic and ophthalmic risk factors.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>Diabetic retinopathy is a common microvascular complication of diabetes and a leading cause of preventable blindness. Early disease is often asymptomatic, making routine diabetic eye screening essential. Timely intervention and good systemic diabetic control can prevent the majority of severe visual complications.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-dryamd" aria-labelledby="tab-common-dryamd-btn" hidden>
+              <h3>Age-Related Macular Degeneration in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> A degenerative disorder affecting the macula, resulting in progressive loss of central vision.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Distorted vision, difficulty reading and recognising faces, and progressive central visual loss.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Drusen, retinal pigment epithelial changes and, in advanced disease, retinal atrophy or choroidal neovascularisation.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Lifestyle modification, monitoring and anti-VEGF therapy for wet AMD.</li>
+                <li><strong>Referral:</strong> Routine for dry AMD and urgent for suspected wet AMD.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Age-related macular degeneration (AMD) is a chronic retinal disorder affecting the macula, the region responsible for central high-resolution vision. It is the leading cause of severe visual impairment in older adults throughout the developed world. Although AMD can significantly impact activities such as reading, driving and recognising faces, peripheral vision is usually preserved, meaning complete blindness is uncommon.</p>
+              <p>AMD is broadly divided into two forms. Dry AMD develops gradually over many years and accounts for the majority of cases. Wet AMD is less common but responsible for most cases of severe vision loss because abnormal blood vessels grow beneath the retina and damage the macula.</p>
+
+              <h3>History of the Disease</h3>
+              <p>The first descriptions of age-related changes affecting the macula emerged during the nineteenth century following the invention of the ophthalmoscope by Hermann von Helmholtz. As retinal imaging techniques improved, clinicians recognised the importance of drusen, the characteristic yellow deposits associated with AMD.</p>
+              <p>For much of the twentieth century, treatment options were limited and progression often resulted in irreversible visual loss. The introduction of anti-VEGF therapy in the early 2000s transformed outcomes for patients with wet AMD, converting a previously devastating diagnosis into a condition that can often be stabilised for many years.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Timeline</h4>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>1851 – Helmholtz invents the ophthalmoscope</li>
+                <li>Late 1800s – AMD recognised as a distinct retinal disease</li>
+                <li>1970s – Fluorescein angiography improves diagnosis</li>
+                <li>2000s – Anti-VEGF therapy introduced</li>
+                <li>Present Day – Effective treatment available for wet AMD</li>
+              </ul>
+
+              <h3>Epidemiology</h3>
+              <p>AMD is the most common cause of severe visual impairment among older adults in developed countries. The condition becomes increasingly prevalent with advancing age and is most commonly diagnosed in individuals over the age of sixty. As life expectancy continues to rise, AMD is expected to place an even greater burden on healthcare systems worldwide.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Increasing age is the strongest risk factor for AMD. Smoking is the most significant modifiable risk factor and substantially increases both the likelihood of developing the disease and the rate at which it progresses. Additional risk factors include a positive family history, hypertension, obesity and cardiovascular disease. Long-term exposure to ultraviolet light has also been implicated in disease development.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>The macula is responsible for detailed central vision. In AMD, degeneration occurs within the retinal pigment epithelium, Bruch's membrane and the overlying photoreceptors. This results in the accumulation of extracellular deposits known as drusen and progressive dysfunction of retinal cells.</p>
+              <p>In some patients, retinal damage stimulates the growth of abnormal blood vessels beneath the macula. These vessels are fragile and prone to leakage, leading to haemorrhage, scarring and rapid central visual deterioration.</p>
+
+              <h3>Classification</h3>
+              <p>AMD is broadly classified into dry AMD and wet AMD.</p>
+              <p><strong>Dry AMD</strong> accounts for approximately 85–90% of cases and is characterised by drusen formation and progressive atrophy of retinal tissues. Visual deterioration tends to occur gradually over many years.</p>
+              <p><strong>Wet AMD</strong> accounts for only 10–15% of cases but causes the majority of severe visual loss. It occurs when abnormal blood vessels develop beneath the retina and leak fluid or blood into the macula.</p>
+
+              <h3>Clinical Forms</h3>
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Dry AMD</h4>
+              <p>Dry AMD typically presents with a gradual decline in central vision. Patients often notice increasing difficulty reading, requiring brighter illumination, or struggling to recognise faces. Colours may appear less vivid and fine detail becomes progressively harder to appreciate.</p>
+              <p>Fundoscopic examination commonly reveals drusen and areas of retinal pigment epithelial disturbance. In advanced disease, geographic atrophy may develop, causing significant central visual impairment.</p>
+              <p>At present there is no curative treatment for dry AMD. Management focuses on reducing modifiable risk factors, particularly smoking cessation, optimising cardiovascular health and monitoring for progression to wet AMD.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Wet AMD</h4>
+              <p>Wet AMD develops when abnormal choroidal blood vessels grow beneath the retina. These vessels are fragile and prone to leakage, resulting in rapid distortion and damage to the macula.</p>
+              <p>Patients frequently describe straight lines appearing bent or wavy, a phenomenon known as metamorphopsia. Reading may suddenly become more difficult and a dark patch may develop in the centre of vision. Symptoms often progress over days to weeks rather than months or years.</p>
+              <p>Early recognition is crucial because prompt treatment can preserve vision and significantly improve long-term outcomes.</p>
+
+              <h3>Symptoms</h3>
+              <p>The symptoms of AMD primarily reflect dysfunction of central vision. Patients commonly report increasing difficulty reading, recognising faces and performing visually demanding tasks. Vision may become blurred or distorted, and colours can appear less vibrant.</p>
+              <p>Individuals with wet AMD often notice a more sudden deterioration in vision. Metamorphopsia is particularly characteristic and should always raise suspicion for neovascular disease.</p>
+              <p>Importantly, peripheral vision is generally preserved, distinguishing AMD from conditions that cause widespread retinal damage.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Drusen</li>
+                <li>Retinal pigment epithelial changes</li>
+                <li>Geographic atrophy</li>
+                <li>Macular haemorrhage</li>
+                <li>Subretinal fluid</li>
+                <li>Choroidal neovascularisation</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Assessment of AMD typically begins with visual acuity testing and dilated fundoscopy. Modern diagnosis and monitoring rely heavily on optical coherence tomography (OCT), which provides detailed cross-sectional imaging of retinal structures.</p>
+              <p>Additional investigations may include:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Visual acuity testing</li>
+                <li>Fundoscopy</li>
+                <li>Optical coherence tomography (OCT)</li>
+                <li>Fundus photography</li>
+                <li>Fluorescein angiography</li>
+              </ul>
+              <p>OCT remains the cornerstone of diagnosis and follow-up.</p>
+
+              <h3>Management</h3>
+              <p>Management depends upon the subtype of AMD.</p>
+              <p>For dry AMD, treatment focuses on lifestyle modification and slowing progression. Smoking cessation is particularly important, as smoking is the most significant modifiable risk factor. Patients are often advised to monitor their vision using an Amsler grid and seek urgent assessment if new distortion develops.</p>
+              <p>For wet AMD, intravitreal anti-VEGF therapy represents the mainstay of treatment. Agents such as ranibizumab, aflibercept and faricimab suppress abnormal vessel growth and reduce fluid leakage. Outcomes are significantly better when treatment is initiated early.</p>
+              <p>Low-vision services can provide substantial support for patients with advanced disease.</p>
+
+              <h3>Complications</h3>
+              <p>AMD can significantly impair quality of life by affecting reading, driving, facial recognition and independence. Advanced disease may result in severe central visual loss despite preservation of peripheral vision.</p>
+              <p>Some patients experience Charles Bonnet syndrome, in which visual hallucinations occur secondary to visual impairment. Although often alarming, these hallucinations do not indicate psychiatric disease or cognitive decline.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Urgent ophthalmology referral is required if a patient develops:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>New visual distortion</li>
+                <li>Sudden central visual loss</li>
+                <li>A new central scotoma</li>
+                <li>Symptoms suggestive of wet AMD</li>
+              </ul>
+              <p>Any patient describing straight lines appearing bent or wavy should be assessed urgently.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>A patient who can navigate around a room but struggles to recognise faces is likely experiencing central visual dysfunction. AMD should always be considered in this scenario.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>When assessing visual loss in an older patient, always ask whether straight lines appear distorted and whether reading has become more difficult. Mentioning the Amsler grid demonstrates a strong understanding of AMD assessment and monitoring.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>Age-related macular degeneration is the leading cause of severe visual impairment in older adults in developed countries. Dry AMD causes gradual central visual decline, whereas wet AMD can result in rapid visual loss due to choroidal neovascularisation. Early recognition and prompt treatment of wet AMD are essential for preserving vision.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-chalazion" aria-labelledby="tab-common-chalazion-btn" hidden>
+              <h3>Chalazion in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> A chronic lipogranulomatous inflammation of a meibomian gland caused by blockage of its duct.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Painless eyelid lump.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Firm, non-tender eyelid nodule.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Warm compresses, lid massage and occasionally incision and curettage.</li>
+                <li><strong>Referral:</strong> Routine referral if persistent or recurrent.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>A chalazion is one of the most common eyelid conditions encountered in both primary care and ophthalmology clinics. It develops when a meibomian gland becomes obstructed, leading to retention of secretions and a chronic inflammatory response within the eyelid.</p>
+              <p>Unlike a stye (hordeolum), a chalazion is usually painless and develops gradually over several weeks. Although benign, large lesions may become cosmetically troublesome or interfere with vision.</p>
+
+              <h3>History of the Disease</h3>
+              <p>The term chalazion derives from the Greek word chalaza, meaning "small lump." Historically, chalazia were often confused with infective eyelid lesions until advances in eyelid anatomy clarified their origin within the meibomian glands.</p>
+              <p>Modern management remains largely conservative, with surgery reserved for persistent lesions.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Timeline</h4>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>1800s – Meibomian gland anatomy better understood</li>
+                <li>Early 1900s – Surgical curettage becomes established</li>
+                <li>Present Day – Conservative management remains first-line</li>
+              </ul>
+
+              <h3>Epidemiology</h3>
+              <p>Chalazia are extremely common and may occur at any age. They are particularly associated with chronic blepharitis, rosacea and meibomian gland dysfunction.</p>
+              <p>Recurrence is not uncommon, especially in patients with underlying eyelid disease.</p>
+
+              <h3>Risk Factors</h3>
+              <p>The strongest risk factors include blepharitis, rosacea and meibomian gland dysfunction. Individuals with oily skin and chronic eyelid inflammation are particularly susceptible.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>Obstruction of a meibomian gland prevents normal drainage of lipid secretions. Accumulated material triggers a chronic granulomatous inflammatory response, producing a firm nodular swelling within the eyelid.</p>
+
+              <h3>Symptoms</h3>
+              <p>Patients typically notice a slowly enlarging eyelid lump that is painless. Occasionally, larger chalazia cause mild discomfort, blurred vision or pressure against the cornea.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Firm eyelid nodule</li>
+                <li>Non-tender swelling</li>
+                <li>Normal overlying skin</li>
+                <li>Localised eyelid thickening</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Diagnosis is usually clinical.</p>
+              <p>Persistent or recurrent lesions may require further assessment to exclude sebaceous gland carcinoma.</p>
+
+              <h3>Management</h3>
+              <p>Most chalazia resolve with conservative treatment. Warm compresses applied several times daily help liquefy retained secretions and improve drainage. Lid massage may also be beneficial.</p>
+              <p>Persistent lesions may require incision and curettage or intralesional steroid injection.</p>
+
+              <h3>Complications</h3>
+              <p>Large chalazia can induce astigmatism by pressing against the cornea. Recurrent lesions should raise suspicion for underlying eyelid pathology.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Referral should be considered for:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Persistent chalazion</li>
+                <li>Recurrent chalazion in the same location</li>
+                <li>Lash loss</li>
+                <li>Ulceration</li>
+                <li>Suspicion of malignancy</li>
+              </ul>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>A painless eyelid lump is usually a chalazion until proven otherwise.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>Always distinguish a chalazion from a stye. Chalazia are typically painless, whereas styes are usually painful and acute.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>A chalazion is a common, painless eyelid lump caused by blockage of a meibomian gland. Most resolve with warm compresses and lid hygiene.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-blepharitis" aria-labelledby="tab-common-blepharitis-btn" hidden>
+              <h3>Blepharitis in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> Chronic inflammation of the eyelid margins.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Gritty eyes, irritation, crusting and fluctuating vision.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Eyelid margin inflammation and debris around the eyelashes.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Long-term lid hygiene.</li>
+                <li><strong>Referral:</strong> Usually managed conservatively.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Blepharitis is a chronic inflammatory disorder affecting the eyelid margins. It is one of the commonest causes of ocular irritation encountered in clinical practice and often follows a relapsing course.</p>
+              <p>Although rarely sight-threatening, blepharitis can significantly impact quality of life and is frequently associated with dry eye disease and meibomian gland dysfunction.</p>
+
+              <h3>History of the Disease</h3>
+              <p>Blepharitis has been recognised for centuries as a cause of chronic ocular irritation. Improvements in slit lamp examination allowed clinicians to better understand the relationship between eyelid inflammation, tear film instability and meibomian gland dysfunction.</p>
+
+              <h3>Epidemiology</h3>
+              <p>Blepharitis is extremely common and affects individuals of all ages. It is particularly prevalent in adults and often coexists with rosacea and seborrhoeic dermatitis.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Common risk factors include rosacea, seborrhoeic dermatitis, meibomian gland dysfunction and dry eye disease. Poor eyelid hygiene may contribute to symptom persistence.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>Inflammation of the eyelid margins disrupts normal tear film function. Meibomian gland dysfunction may alter the lipid layer of the tear film, resulting in increased tear evaporation and ocular surface irritation.</p>
+
+              <h3>Symptoms</h3>
+              <p>Patients frequently describe burning, grittiness and irritation, particularly upon waking. Crusting around the eyelashes and fluctuating vision are common complaints.</p>
+              <p>Symptoms are often bilateral and chronic.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Eyelid margin redness</li>
+                <li>Crusting around lashes</li>
+                <li>Collarettes</li>
+                <li>Meibomian gland dysfunction</li>
+                <li>Tear film instability</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Diagnosis is usually clinical.</p>
+              <p>Slit lamp examination confirms eyelid margin inflammation and associated ocular surface changes.</p>
+
+              <h3>Management</h3>
+              <p>The cornerstone of treatment is long-term lid hygiene. Warm compresses and gentle cleaning of the eyelid margins help remove debris and improve meibomian gland function.</p>
+              <p>Lubricating drops may improve associated dry eye symptoms. Some patients benefit from topical or oral antibiotics.</p>
+
+              <h3>Complications</h3>
+              <p>Untreated blepharitis may contribute to recurrent chalazia, dry eye disease and chronic ocular discomfort.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Referral may be required for:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Recurrent chalazia</li>
+                <li>Significant corneal involvement</li>
+                <li>Diagnostic uncertainty</li>
+              </ul>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>Blepharitis is often chronic and controlled rather than cured.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>When examining a patient with irritated eyes, always inspect the eyelid margins carefully.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>Blepharitis is a common chronic inflammatory eyelid condition that is primarily managed through lid hygiene and treatment of associated ocular surface disease.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-conj" aria-labelledby="tab-common-conj-btn" hidden>
+              <h3>Conjunctivitis in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> Inflammation of the conjunctiva resulting in a red eye and discharge.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Redness, discharge, irritation and watering.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Conjunctival injection and ocular discharge.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Usually supportive, depending on the cause.</li>
+                <li><strong>Referral:</strong> Only if red flag features are present.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Conjunctivitis is one of the most common causes of a red eye and may be viral, bacterial or allergic in origin. Most cases are self-limiting and resolve without specialist intervention.</p>
+              <p>The key challenge for clinicians is distinguishing uncomplicated conjunctivitis from more serious causes of red eye such as keratitis, uveitis or acute angle-closure glaucoma.</p>
+
+              <h3>History of the Disease</h3>
+              <p>Conjunctivitis has been recognised since ancient times as a common cause of ocular redness. The development of microbiology in the nineteenth century enabled clinicians to distinguish bacterial from viral causes and improve management strategies.</p>
+
+              <h3>Epidemiology</h3>
+              <p>Conjunctivitis affects millions of individuals annually and occurs across all age groups. Viral conjunctivitis is the most common form, while allergic conjunctivitis is particularly prevalent among younger individuals with atopy.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Exposure to infected individuals, poor hand hygiene, contact lens wear and allergic disease all increase the risk of conjunctivitis.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>Inflammation of the conjunctiva leads to vasodilation, increased vascular permeability and ocular irritation. Depending on the cause, discharge may be watery, mucous or purulent.</p>
+
+              <h3>Symptoms</h3>
+              <p>Patients usually present with a red, irritated eye associated with discharge or excessive watering. The eye may feel gritty but is typically not painful.</p>
+              <p>Vision is usually normal.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Diffuse conjunctival injection</li>
+                <li>Watery discharge</li>
+                <li>Purulent discharge</li>
+                <li>Eyelid crusting</li>
+                <li>Chemosis</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Diagnosis is usually clinical.</p>
+              <p>Microbiological swabs are generally reserved for severe, recurrent or treatment-resistant cases.</p>
+
+              <h3>Management</h3>
+              <p>Most cases resolve spontaneously. Viral conjunctivitis is managed with supportive measures including lubricants and hygiene advice. Bacterial conjunctivitis may benefit from topical antibiotics in selected patients.</p>
+              <p>Allergic conjunctivitis responds well to allergen avoidance and antihistamine therapy.</p>
+
+              <h3>Complications</h3>
+              <p>Complications are uncommon. However, severe infection or misdiagnosis may occasionally result in corneal involvement.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Urgent assessment is required if the patient has:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Pain</li>
+                <li>Photophobia</li>
+                <li>Reduced vision</li>
+                <li>Contact lens use with significant symptoms</li>
+                <li>Corneal opacity</li>
+              </ul>
+              <p>These features suggest a diagnosis other than simple conjunctivitis.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>Conjunctivitis should not cause significant pain or visual loss.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>A red eye with normal vision and minimal pain is likely conjunctivitis. A red eye with pain or reduced vision is not conjunctivitis until proven otherwise.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>Conjunctivitis is a common and usually self-limiting cause of red eye. The most important clinical skill is recognising when the presentation suggests a more serious diagnosis.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-ded" aria-labelledby="tab-common-ded-btn" hidden>
+              <h3>Dry Eye Disease in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> A multifactorial disorder of the tear film resulting in ocular discomfort and visual disturbance.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Grittiness, burning, fluctuating vision and excessive watering.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Reduced tear film stability and ocular surface inflammation.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Artificial tears, lid hygiene and management of underlying causes.</li>
+                <li><strong>Referral:</strong> Routine referral for persistent or severe symptoms.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Dry eye disease is one of the most common ophthalmic conditions encountered in clinical practice. It occurs when tears are either produced in insufficient quantity or evaporate too rapidly, resulting in an unstable tear film and inflammation of the ocular surface.</p>
+              <p>Although often regarded as a minor condition, dry eye can significantly affect quality of life, causing discomfort, visual fluctuation and difficulty with prolonged reading or screen use.</p>
+
+              <h3>History of the Disease</h3>
+              <p>Historically, dry eye was considered a simple deficiency of tear production. Advances in ocular surface research have demonstrated that the condition is far more complex, involving inflammation, tear film instability and meibomian gland dysfunction.</p>
+              <p>Modern understanding recognises dry eye as a chronic inflammatory disease of the ocular surface.</p>
+
+              <h4 style="margin-top: 0.9rem; margin-bottom: 0.6rem;">Timeline</h4>
+              <ul style="margin-bottom: 1.2rem;">
+                <li>1900s – Tear deficiency recognised</li>
+                <li>1960s – Schirmer testing widely adopted</li>
+                <li>1990s – Tear film dysfunction better understood</li>
+                <li>Present Day – Dry eye recognised as a multifactorial inflammatory disorder</li>
+              </ul>
+
+              <h3>Epidemiology</h3>
+              <p>Dry eye disease affects millions of people worldwide and becomes increasingly common with age. Women are affected more frequently than men, particularly after menopause.</p>
+              <p>The prevalence continues to increase due to ageing populations and prolonged screen use.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Ageing, female sex and meibomian gland dysfunction are among the most important risk factors. Autoimmune conditions such as Sjögren syndrome are strongly associated with severe dry eye.</p>
+              <p>Additional risk factors include contact lens wear, prolonged screen use, certain medications and previous ocular surgery.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>A healthy tear film consists of lipid, aqueous and mucin layers. Disruption of any component can lead to instability of the tear film and increased evaporation.</p>
+              <p>This results in ocular surface inflammation, epithelial damage and a self-perpetuating cycle of irritation and tear film dysfunction.</p>
+
+              <h3>Symptoms</h3>
+              <p>Patients often complain of grittiness, burning, stinging and ocular discomfort. Vision may fluctuate throughout the day, particularly during prolonged reading or computer use.</p>
+              <p>Paradoxically, excessive watering can occur because irritation stimulates reflex tear production.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Reduced tear meniscus</li>
+                <li>Tear film instability</li>
+                <li>Corneal staining</li>
+                <li>Conjunctival injection</li>
+                <li>Meibomian gland dysfunction</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Assessment may include:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Visual acuity testing</li>
+                <li>Tear break-up time</li>
+                <li>Fluorescein staining</li>
+                <li>Schirmer testing</li>
+                <li>Slit lamp examination</li>
+              </ul>
+
+              <h3>Management</h3>
+              <p>Treatment focuses on improving tear film stability and reducing inflammation. Artificial tears remain the mainstay of therapy and may be supplemented by lid hygiene measures where meibomian gland dysfunction is present.</p>
+              <p>More severe disease may require topical anti-inflammatory treatment or specialist intervention.</p>
+
+              <h3>Complications</h3>
+              <p>Most cases cause chronic discomfort rather than sight-threatening disease. However, severe untreated dry eye can result in persistent epithelial defects, corneal ulceration and visual impairment.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Referral should be considered for:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Severe symptoms</li>
+                <li>Corneal involvement</li>
+                <li>Suspected Sjögren syndrome</li>
+                <li>Failure of first-line treatment</li>
+              </ul>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>Excessive watering does not exclude dry eye. Reflex tearing is a common feature of ocular surface irritation.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>When a patient describes gritty, burning eyes that worsen during screen use, dry eye disease should be high on your differential diagnosis.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>Dry eye disease is a common chronic disorder of the tear film that causes ocular discomfort and fluctuating vision. Most cases respond well to lubricants and management of underlying causes.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-common-episcleritis" aria-labelledby="tab-common-episcleritis-btn" hidden>
+              <h3>Episcleritis in 60 Seconds</h3>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li style="margin-bottom: 0.4rem;"><strong>Definition:</strong> Benign inflammation of the episclera.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Symptoms:</strong> Mild discomfort and redness.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Signs:</strong> Sectoral redness with normal vision.</li>
+                <li style="margin-bottom: 0.4rem;"><strong>Management:</strong> Usually self-limiting.</li>
+                <li><strong>Referral:</strong> Routine referral only if diagnosis is uncertain.</li>
+              </ul>
+
+              <h3 style="margin-top: 1.4rem;">Overview</h3>
+              <p>Episcleritis is a common inflammatory condition affecting the episclera, the thin vascular layer between the conjunctiva and sclera. It is generally benign and self-limiting, often resolving spontaneously within a few weeks.</p>
+              <p>The condition is important because it is frequently confused with scleritis, which is significantly more serious.</p>
+
+              <h3>Epidemiology</h3>
+              <p>Episcleritis is more common than scleritis and most frequently affects young and middle-aged adults.</p>
+              <p>Many cases occur without an identifiable cause.</p>
+
+              <h3>Risk Factors</h3>
+              <p>Although many cases are idiopathic, some are associated with autoimmune diseases including rheumatoid arthritis and inflammatory bowel disease.</p>
+
+              <h3>Pathophysiology</h3>
+              <p>Inflammation affects the superficial episcleral vascular plexus without involving deeper scleral tissues.</p>
+              <p>This explains why symptoms are relatively mild and vision remains normal.</p>
+
+              <h3>Symptoms</h3>
+              <p>Patients usually report a red eye associated with mild irritation or discomfort. Significant pain is uncommon.</p>
+              <p>Vision is generally unaffected.</p>
+
+              <h3>Signs</h3>
+              <p>Examination may reveal:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Sectoral redness</li>
+                <li>Minimal tenderness</li>
+                <li>Normal visual acuity</li>
+                <li>Absence of corneal involvement</li>
+              </ul>
+
+              <h3>Investigations</h3>
+              <p>Diagnosis is usually clinical.</p>
+              <p>Phenylephrine drops may blanch superficial episcleral vessels, helping differentiate episcleritis from scleritis.</p>
+
+              <h3>Management</h3>
+              <p>Most cases resolve spontaneously. Artificial tears and oral NSAIDs may improve symptoms.</p>
+
+              <h3>Complications</h3>
+              <p>Complications are rare and visual prognosis is excellent.</p>
+
+              <h3 style="background: rgba(255, 100, 100, 0.1); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Red Flags &amp; Referral Guidance</h3>
+              <p>Consider alternative diagnoses if there is:</p>
+              <ul style="list-style: none; padding: 0; margin-bottom: 1.2rem;">
+                <li>Severe pain</li>
+                <li>Reduced vision</li>
+                <li>Photophobia</li>
+                <li>Corneal involvement</li>
+              </ul>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Clinical Pearl</h3>
+              <p>Normal vision strongly favours episcleritis over scleritis.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">OSCE Tip</h3>
+              <p>The easiest distinction is pain. Episcleritis causes mild discomfort, whereas scleritis causes severe deep pain.</p>
+
+              <h3 style="background: rgba(var(--accent-soft-rgb), 0.1); border-left: 3px solid var(--accent-soft); padding: 0.75rem; border-radius: 0.4rem; margin-top: 1.2rem;">Key Takeaway</h3>
+              <p>Episcleritis is a benign self-limiting inflammatory condition causing a mildly uncomfortable red eye with preserved vision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Foundations of Clinical Ophthalmology – Created by Zakariya (Medical Student, Cardiff University 2022–27). Educational use only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

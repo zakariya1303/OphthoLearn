@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 2: Ophthalmology Examination</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-progress-module="exam">
+  <!-- NAVIGATION -->
+  <header class="top-nav">
+    <a class="logo" href="index.html">
+      <img src="Images/logo.png" alt="OphthoLearn Logo">
+      <span class="logo-text">The Clinical Foundations of Ophthalmology</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="module1-history.html">Module 1: History</a>
+
+      <div class="nav-item dropdown">
+        <a class="nav-link" href="module2-exam.html">Module 2: Examination <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <div class="module-viewer">
+            <p class="small-note"><em>Note:</em> The self-assessment checklist below now includes the examination skills that were previously listed in the numbered checklist.</p>
+          </div>
+
+          <div class="module-viewer">
+            <h3 class="subsection-title">Self-assessment checklist</h3>
+            <p class="section-intro">Use this checklist to reflect on your technique, structure and professionalism during a timed station.</p>
+
+            <div class="osce-checklist-card">
+              <p class="small-note" style="margin-bottom: 0.6rem;">
+                Tick each item you feel you’ve met during a practice station. This is for self-reflection only and is stored
+                locally in your browser.
+              </p>
+
+              <div id="osceChecklistContainer"></div>
+
+              <div class="osce-checklist-footer">
+                <p id="osceChecklistScore">Score: 0 / 0</p>
+                <p id="osceChecklistBand">Band: –</p>
+                <button class="outline-btn" id="resetChecklistBtn">Reset checklist</button>
+              </div>
+
+              <p class="small-note">
+                Bands: Excellent, Pass, Borderline, Needs consolidation. Focus your revision on unchecked items and repeat the
+                station to build confidence, fluency and patient-centred communication.
+              </p>
+            </div>
+          </div>
+      <h2>Module 2: Ophthalmology examination</h2>
+
+      <p class="section-intro">

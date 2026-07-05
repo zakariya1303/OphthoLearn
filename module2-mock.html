@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 2: Mock Station</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body data-progress-module="exam">
+  <header class="top-nav">
+    <a class="logo" href="index.html">
+      <img src="Images/logo.png" alt="OphthoLearn Logo">
+      <span class="logo-text">The Clinical Foundations of Ophthalmology</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="module1-history.html">Module 1: History</a>
+      <div class="nav-item dropdown">
+        <a class="nav-link" href="module2-exam.html">Module 2: Examination <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-link" href="module2-exam.html">Eye examination overview</a>
+          <a class="dropdown-link" href="module2-mock.html">Mock station</a>
+          <a class="dropdown-link" href="module2-fundoscopy.html">How to use fundoscopy</a>
+        </div>
+      </div>
+      <div class="nav-item dropdown">
+        <a class="nav-link" href="module3-common.html">Module 3: Presentations <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-link" href="module3-common.html">Common conditions</a>
+          <a class="dropdown-link" href="module3-emergency.html">Emergency conditions</a>
+        </div>
+      </div>
+      <div class="nav-item dropdown dropdown-right">
+        <a class="nav-link" href="module4-spot.html">Module 4: Practise <span class="nav-caret">▾</span></a>
+        <div class="dropdown-menu" role="menu">
+          <a class="dropdown-link" href="module4-spot.html">Spot diagnosis</a>
+          <a class="dropdown-link" href="module4-sba.html">SBA questions</a>
+        </div>
+      </div>
+      <a class="nav-link" href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  <main>
+    <section class="section" id="module2-mock">
+      <h2>Module 2: Mock station</h2>
+      <p class="section-intro">Use this as a script for an OSCE station. Each step can be expanded with prompts you can say out loud.</p>
+      <div class="osce-layout">
+        <div>
+          <span class="badge">5–7 minute station</span>
+          <p style="margin-top: 0.75rem;">You are the FY1 doctor asked to perform a focused cranial nerve and eye examination on a standardised patient complaining of blurred vision.</p>
+          <p style="color: var(--text-muted); margin-top:0.5rem;"><strong>Examiner prompt:</strong> “Please perform a cranial nerve and eye examination. You do not need to examine other systems. Explain your findings as you go.”<br><em>This station assesses cranial nerves II, III and VI. Use the 'I can't believe VAR' mnemonic when performing the steps.</em></p>
+          <div class="osce-controls">
+            <div class="osce-timer">
+              <span class="osce-timer-label">OSCE timer:</span>
+              <span id="osceTimerDisplay">07:00</span>
+            </div>
+            <div class="osce-timer-buttons">
+              <button class="outline-btn" id="startOsceTimerBtn">Start 7-minute station</button>
+              <button class="outline-btn" id="resetOsceTimerBtn">Reset</button>
+            </div>
+            <p class="small-note osce-timer-note">Use this timer to practise under exam conditions. It runs only on your device and does not record any data.</p>
+          </div>
+        </div>
+        <div class="osce-station-panel">
+          <div class="osce-summary-card">
+            <h3>Station focus</h3>
+            <ul>
+              <li>Introduction, consent and patient safety.</li>
+              <li>Stay structured and explain each step as you go.</li>
+              <li>Finish with a concise summary and next steps.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="osce-markscheme-section">
+        <h3 class="subsection-title">Student checklist markscheme</h3>
+        <p class="section-intro">Use this checklist to reflect on your technique, structure and professionalism during a timed station.</p>
+        <div class="osce-checklist-card">
+          <p class="small-note" style="margin-bottom: 0.6rem;">Tick each item you feel you’ve met during a practice station. This is for self-reflection only and is stored locally in your browser.</p>
+          <div id="osceChecklistContainer"></div>
+          <div class="osce-checklist-footer">
+            <p id="osceChecklistScore">Score: 0 / 0</p>
+            <p id="osceChecklistBand">Band: –</p>
+            <button class="outline-btn" id="resetChecklistBtn">Reset checklist</button>
+          </div>
+          <p class="small-note">Bands: Excellent, Pass, Borderline, Needs consolidation. Focus your revision on unchecked items and repeat the station to build confidence, fluency and patient-centred communication.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><p>&copy; <span id="year"></span> Foundations of Clinical Ophthalmology – Created by Zakariya (Medical Student, Cardiff University 2022–27). Educational use only.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
