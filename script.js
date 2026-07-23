@@ -933,6 +933,7 @@ function initSpotDiagnosisPage() {
   };
 
   const storageKey = 'ophthoSpotState';
+  const optionOrderCache = {};
 
   function loadState() {
     try {
@@ -1004,13 +1005,20 @@ function initSpotDiagnosisPage() {
   }
 
   function buildOptions(caseData) {
+    if (optionOrderCache[caseData.id]) {
+      return optionOrderCache[caseData.id];
+    }
+
     const distractors = shuffle(
       cases
         .filter(item => item.id !== caseData.id)
         .map(item => item.answer)
         .filter((answer, index, list) => list.indexOf(answer) === index)
     ).slice(0, 3);
-    return shuffle([caseData.answer, ...distractors]);
+
+    const options = shuffle([caseData.answer, ...distractors]);
+    optionOrderCache[caseData.id] = options;
+    return options;
   }
 
   function toggleBookmark(caseId) {

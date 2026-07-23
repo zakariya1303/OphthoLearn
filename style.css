@@ -48,6 +48,12 @@ body.module2-exam-page {
   background: #030c25;
 }
 
+body.module4-sba-page {
+  position: relative;
+  min-height: 100vh;
+  background: #030c25;
+}
+
 .home-video-bg {
   position: fixed;
   inset: 0;
@@ -77,6 +83,43 @@ body.module2-exam-page main,
 body.module2-exam-page .footer {
   position: relative;
   z-index: 2;
+}
+
+body.module4-sba-page header,
+body.module4-sba-page main,
+body.module4-sba-page .footer {
+  position: relative;
+}
+
+body.module4-sba-page header {
+  z-index: 40;
+}
+
+body.module4-sba-page main,
+body.module4-sba-page .footer {
+  z-index: 1;
+}
+
+body.module4-sba-page .top-nav {
+  min-height: 66px;
+  padding: 0 1rem;
+}
+
+body.module4-sba-page main {
+  margin-top: 10px;
+}
+
+body.module4-sba-page .section {
+  margin-top: 0.9rem;
+}
+
+#module4-sba {
+  position: relative;
+  padding: 0.7rem 1.2rem 1.4rem;
+  border-radius: 1.6rem;
+  background: rgba(3, 12, 37, 0.82);
+  border: 1px solid rgba(195, 146, 62, 0.14);
+  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.66);
 }
 
 /* Layout */
@@ -127,8 +170,38 @@ section.section h2 {
   margin-top: 9rem;
 }
 
+#module2-exam h2 {
+  margin-top: -3.5rem;
+}
+
 #module4-spot h2 {
   margin-top: 10.5rem;
+}
+
+#module4-sba h2 {
+  margin-top: 0;
+}
+.sba-feedback-prompt {
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 0.95rem;
+  border-radius: 1rem;
+  background: rgba(3, 12, 37, 0.95);
+  border: 1px solid rgba(195, 146, 62, 0.22);
+  box-shadow: 0 18px 44px rgba(2, 6, 23, 0.44);
+}
+
+.sba-feedback-prompt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 1rem;
+  margin-top: 1.1rem;
+}
+
+.sba-feedback-prompt p {
+  color: #f8fafc;
+  margin: 0;
 }
 
 #module3-common h2,
@@ -283,7 +356,7 @@ body.home-page .top-nav {
   border: 1px solid rgba(195, 146, 62, 0.2);
   background: rgba(13, 31, 60, 0.98);
   box-shadow: var(--shadow-strong);
-  z-index: 20;
+  z-index: 60;
 }
 
 .dropdown-right .dropdown-menu {
@@ -1702,9 +1775,10 @@ body.interactive-hover::before {
 }
 
 #module4-spot .spot-option-btn {
+  position: relative;
   text-align: left;
   border-radius: 0.95rem;
-  padding: 0.8rem 0.95rem;
+  padding: 0.8rem 0.95rem 1.7rem;
   cursor: pointer;
   font-size: 0.96rem;
   min-height: 3.2rem;
@@ -1717,8 +1791,9 @@ body.interactive-hover::before {
 
 #module4-spot .spot-option-btn.correct::after {
   content: "Correct";
-  display: block;
-  margin-top: 0.35rem;
+  position: absolute;
+  left: 0.95rem;
+  bottom: 0.55rem;
   font-size: 0.78rem;
   color: #bbf7d0;
 }
@@ -1730,8 +1805,9 @@ body.interactive-hover::before {
 
 #module4-spot .spot-option-btn.incorrect::after {
   content: "Selected";
-  display: block;
-  margin-top: 0.35rem;
+  position: absolute;
+  left: 0.95rem;
+  bottom: 0.55rem;
   font-size: 0.78rem;
   color: #fecaca;
 }
@@ -1880,6 +1956,50 @@ body.interactive-hover::before {
 }
 
 /* LIGHTBOX */
+.resources-reference-card {
+  margin-top: 2rem;
+  padding: 1.2rem 1.25rem;
+  border-radius: 1.2rem;
+  background: rgba(13, 31, 60, 0.92);
+  border: 1px solid rgba(195, 146, 62, 0.16);
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.55);
+}
+
+.resources-reference-card h3 {
+  margin: 0 0 0.5rem;
+  color: #efd184;
+  font-size: 1.1rem;
+}
+
+.resources-reference-card p {
+  color: #cbd5f5;
+  margin-bottom: 0.95rem;
+}
+
+.resources-reference-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.resources-reference-list li {
+  margin: 0;
+}
+
+.resources-reference-list a {
+  color: #e5e7eb;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0;
+}
+
+.resources-reference-list a:hover {
+  color: #efd184;
+  text-decoration: underline;
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -1935,18 +2055,6 @@ body.interactive-hover::before {
 }
 
 /* QUIZ LAYOUT */
-.compact-header {
-  margin-bottom: 1rem;
-}
-
-.sba-summary-card {
-  margin-bottom: 1.2rem;
-  padding: 1rem 1.1rem;
-  border-radius: 1rem;
-  background: linear-gradient(180deg, rgba(11, 19, 32, 0.92), rgba(15, 23, 42, 0.95));
-  border: 1px solid rgba(195, 146, 62, 0.18);
-}
-
 #quizContainer {
   display: grid;
   gap: 1rem;
@@ -1955,19 +2063,19 @@ body.interactive-hover::before {
 .quiz-question {
   padding: 1.1rem 1.1rem 1rem;
   border-radius: 1.2rem;
-  border: 1px solid rgba(195, 146, 62, 0.16);
-  background: rgba(11, 19, 32, 0.82);
-  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.16);
+  border: 1px solid rgba(195, 146, 62, 0.26);
+  background: rgba(3, 12, 37, 0.97);
+  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.55);
 }
 
 .quiz-question h4 {
   margin-bottom: 0.55rem;
-  color: var(--gold-soft);
+  color: #f8e7b0;
 }
 
 .quiz-stem {
   margin: 0 0 0.9rem;
-  color: var(--text-main);
+  color: #f8fafc;
   line-height: 1.65;
 }
 
@@ -1983,8 +2091,8 @@ body.interactive-hover::before {
   margin-bottom: 0.65rem;
   padding: 0.8rem 0.9rem;
   border-radius: 0.95rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.28);
   cursor: pointer;
   transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
@@ -2021,6 +2129,7 @@ body.interactive-hover::before {
   display: inline-block;
   line-height: 1.45;
   width: calc(100% - 4.1rem);
+  color: #f8fafc;
 }
 
 .page-video-backdrop {
@@ -2036,13 +2145,13 @@ body.interactive-hover::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.85) contrast(1.05) brightness(0.42);
+  filter: saturate(0.72) contrast(0.95) brightness(0.26);
 }
 
 .page-video-backdrop-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4, 10, 20, 0.2), rgba(4, 10, 20, 0.72));
+  background: linear-gradient(180deg, rgba(3, 12, 37, 0.7), rgba(3, 12, 37, 0.9));
 }
 
 .quiz-option.is-correct {
@@ -2059,9 +2168,9 @@ body.interactive-hover::before {
   margin-top: 0.95rem;
   padding: 0.95rem 1rem;
   border-radius: 1rem;
-  background: rgba(195, 146, 62, 0.1);
-  border: 1px solid rgba(195, 146, 62, 0.22);
-  color: var(--text-main);
+  background: rgba(195, 146, 62, 0.14);
+  border: 1px solid rgba(195, 146, 62, 0.28);
+  color: #f8fafc;
   line-height: 1.6;
 }
 
@@ -2083,6 +2192,10 @@ body.interactive-hover::before {
   margin: 0;
   font-weight: 600;
   color: var(--text-main);
+}
+
+.sba-feedback-prompt {
+  margin-top: 1rem;
 }
 
 /* Quiz button spacing */

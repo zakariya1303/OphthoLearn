@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="module4-sba-page">
   <div class="page-video-backdrop" aria-hidden="true">
     <video class="page-video-backdrop-media" autoplay muted loop playsinline>
       <source src="Human_iris_macro_shot_202607050509.mp4" type="video/mp4" />
@@ -29,17 +29,14 @@
   </header>
   <main>
     <section class="section" id="sba">
-      <div class="section-header compact-header">
-        <h2>SBA questions</h2>
-        <p class="section-intro">A 10-mark ophthalmology SBA quiz. Answer each question, then submit to reveal your score and the worked explanations.</p>
-      </div>
-      <div class="sba-summary-card">
-        <p class="small-note">Ten single-best-answer questions covering emergency ophthalmology, neuro-ophthalmology and common presentation patterns.</p>
-      </div>
       <div id="quizContainer"></div>
       <div class="sba-actions">
         <button class="primary-btn" id="submitQuizBtn">Submit Answers</button>
         <p id="quizResult" class="quiz-result"></p>
+      </div>
+      <div class="sba-feedback-prompt">
+        <p>Please finish by filling out the feedback form so we can keep improving the resource.</p>
+        <a class="outline-btn" href="feedback.html">Go to feedback form</a>
       </div>
     </section>
   </main>
